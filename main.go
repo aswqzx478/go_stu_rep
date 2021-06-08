@@ -1,13 +1,11 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	fmt.Println("Hello playground")
-	fmt.Printf("My weight on the surface of Mars is %v lbs", 149*0.3783)
-	fmt.Printf("and I would be %v years old.\n ", 41*365/687)
-
-	fmt.Printf("My weight on the surface of %v is %v lbs.\n", "Earth", 149.0)
+	//-15:向右填充,填充满15个空格,包括字符在内
+	//$4v : 向左填充,不满4 则用空格填充到4个
+	fmt.Printf("%-15v $%4v\n", "SpaceX", "94")
+	//文本右对齐
+	fmt.Printf("%-15v $%4v\n", "Virgin Galactic", 100)
 }
